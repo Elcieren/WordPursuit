@@ -1,4 +1,4 @@
-![Adsız tasarım](https://github.com/user-attachments/assets/1a21eb94-47a8-4430-9a29-a06b9e628aad)
+![Ekran-Kaydı-2024-10-08-05 24 07](https://github.com/user-attachments/assets/108ee612-0213-42a1-900a-7488673fa8dd)
  <details>
     <summary><h2>Uygulma Amacı</h2></summary>
     Proje Amacı
