@@ -1,3 +1,4 @@
+![Adsız tasarım](https://github.com/user-attachments/assets/1a21eb94-47a8-4430-9a29-a06b9e628aad)
  <details>
     <summary><h2>Uygulma Amacı</h2></summary>
     Proje Amacı
