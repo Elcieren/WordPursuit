@@ -187,6 +187,15 @@ class GameViewController: UIViewController {
                 ac.addAction(UIAlertAction(title: "Lets go ", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            let alert = UIAlertController(title: "Üzgünüm", message: "Yanlış cevap malasef tekrar dene", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.cancel, handler: nil))
+            present(alert, animated: true)
+            currentAnswer.text = ""
+            for button in activitedButton {
+                button.isHidden = false
+            }
+            activitedButton.removeAll()
         }
     }
     
@@ -234,7 +243,7 @@ class GameViewController: UIViewController {
                     
                     let solutionWord = answer.replacingOccurrences(of: "|", with: "")
                     
-                    solutionsString += "\(solutionWord.count) letters\n"
+                    solutionsString += "\(solutionWord.count) harf\n"
                     solutions.append(solutionWord)
                     
                     
