@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     var currentAnswer: UITextField!
     var scoreLabel: UILabel!
     var letterButtons = [UIButton]()
+    var currentAnimationTwo = 0
     
     
     var activitedButton = [UIButton]()
@@ -165,7 +166,11 @@ class GameViewController: UIViewController {
         
         currentAnswer.text = currentAnswer.text?.appending(buttonTitle)
         activitedButton.append(sender)
-        sender.isHidden = true
+        sender.isEnabled = false
+        UIView.animate(withDuration: 0.5) { // 0.5 saniyelik bir animasyon süresiyle
+                sender.alpha = 0.5 // Görünürlüğü yarıya indiriyoruz
+            }
+        
     }
     
     @objc func submitTapped(_ sender: UIButton){
@@ -267,6 +272,8 @@ class GameViewController: UIViewController {
             }
         }
     }
+    
+    
     
 
 
